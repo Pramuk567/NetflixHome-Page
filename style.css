@@ -374,8 +374,7 @@ span a {
 /* responsibal create  */
 
 
-
-@media screen and (max-width:800px) {
+@media screen and (min-width:300px) and (max-width:1000px) {
     .main {
         height: 56vh;
     }
@@ -390,7 +389,7 @@ span a {
 
     .main input {
         height: 33px;
-        width: 57vw;
+        width: 37vw;
     }
 
     .secont-btn {
@@ -398,8 +397,19 @@ span a {
 
     }
 
+    p.ue {
+        font-size: 30px;
+        max-width: 85vw;
+        margin-top: 8px;
+    }
+
+    .second-section {
+        padding: 11px;
+    }
+
+
     h3.ft {
-        font-size: 38px;
+        font-size: max(38px, 23px);
         margin-left: 1em;
     }
 
@@ -413,7 +423,7 @@ span a {
     }
 
     .faq h2 {
-        font-size: 27px;
+        font-size: 23px;
     }
 
     .faqbox img {
@@ -430,7 +440,8 @@ span a {
         font-size: 17px;
         margin-left: 0px;
     }
-    .second-button{
+
+    .second-button {
         flex-wrap: wrap;
     }
 
@@ -440,6 +451,7 @@ span a {
         font-size: 32px;
         width: 70vw;
     }
+
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -448,21 +460,24 @@ span a {
     .faqbox {
         width: 60vw;
     }
-    .last .select{
+
+    .last .select {
         max-width: 23vw;
         height: 4vh;
         font-size: medium;
     }
-    .select option{
+
+    .select option {
         font-size: 9px;
     }
-    .last span:nth-child(3){
+
+    .last span:nth-child(3) {
         font-size: 9px;
     }
 
     .btn-second {
-        height: 5vh;
-        width: 44vw;
+        max-height: 9vh;
+        width: 57vw;
         font-size: 21px;
-}
+    }
 }
